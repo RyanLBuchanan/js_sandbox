@@ -1,0 +1,1 @@
+alert('Bon jour le Monde!');
