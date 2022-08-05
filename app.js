@@ -1,1 +1,2 @@
-alert('Bon jour le Monde!');
+// Log to console
+console.log
