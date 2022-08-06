@@ -18,3 +18,8 @@ console.time('Hello');
   console.log('Hello world!')
   console.log('Hello world!')
 console.timeEnd('Hello');
+
+var name = 'Nurse Chapel';
+console.log(name);
+
+console.log(name);
