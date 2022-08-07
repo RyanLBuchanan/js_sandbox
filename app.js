@@ -186,10 +186,10 @@
 
 
 // TEMPLATE LITERALS
-const name = 'T\'Pol';
-const age = 29;
-const job = 'Chief Science Officer';
-const city = 'Enterprise';
+// const name = 'T\'Pol';
+// const age = 29;
+// const job = 'Chief Science Officer';
+// const city = 'Enterprise';
 
 // // // WITHOUT TEMPLATE STRINGS (es5)
 // // html = '<ul><li>Name: ' + name + '</li><li>Age: ' + age + '</li><li>Job: ' + job
@@ -222,67 +222,129 @@ const city = 'Enterprise';
 // document.body.innerHTML = html;
 
 // Create some arrays
-const numbers = [43,56,33,23,44,36,5];
-const numbers2 = new Array(22,45,33,76,54);
-const fruit = ['Apple', 'Starfruit', 'Snake Fruit', 'Durian'];
-const mixed = [22, 'Hello', true, undefined, null, {a:1, b:2}, new Date()];
+// const numbers = [43,56,33,23,44,36,5];
+// const numbers2 = new Array(22,45,33,76,54);
+// const fruit = ['Apple', 'Starfruit', 'Snake Fruit', 'Durian'];
+// const mixed = [22, 'Hello', true, undefined, null, {a:1, b:2}, new Date()];
 
-console.log(mixed);
+// console.log(mixed);
+
+// let val;
+
+// // Get array length
+// val = numbers.length;
+// // Check if is array
+// val = Array.isArray(numbers);
+// val = numbers[0];
+// // Insert into array
+// numbers[2] = 100;
+// // Find index of value
+// val = numbers.indexOf(100);
+
+// // // MUTATING ARRAYS
+// // numbers.push(250);
+// // // ADD TO FRONT
+// // numbers.unshift(120);
+// // // TAKE FROM END
+// // numbers.pop();
+// // // TAKE FROM FRONT
+// // numbers.shift();
+// // // SPLICE VALUES
+// // numbers.splice(1,3);
+// // // REVERSE ARRAY
+// // numbers.reverse();
+
+// // CONCAT ARRAY
+// val = numbers.concat(numbers2);
+
+// // Sorting arrays
+// val = fruit.sort();
+// // val = numbers.sort();
+
+// // Use the compare function
+// // val = numbers.sort(function(x,y){
+// //   return x - y;
+// // })
+
+// // // Reverse sort
+// // val = numbers.sort(function(x,y){
+// //   return y - x;
+// // });
+
+
+// // Find 
+// function under50(num){
+//   return num < 50;
+// };
+
+// function over50(num){
+//   return num > 50;
+// };
+
+// val = numbers.find(under50);
+// val = numbers.find(over50);
+
+// console.log(numbers);
+// console.log(val);
+
+// OBJECT LITERALS
+// const person = {
+//   firstName: 'T\'Pol',
+//   lastName: 'Vulcanness',
+//   age: 29,
+//   email: 'tpol@enterprise.com',
+//   hobbies: ['fitness', 'meditation', 'mathematics'],
+//   address: {
+//     city: 'Shi\'Kahr',
+//     planet: 'Vulcan'
+//   },
+//   getBirthYear: function(){
+//     return 2022 - this.age;
+//   }
+// }
+
+// let val;
+
+// val = person;
+// // Get specific value
+// val = person.firstName;
+// val = person['lastName'];
+// val = person.age;
+// val = person.hobbies[2];
+// val = person.address.city;
+// val = person.getBirthYear();
+
+
+// console.log(val);
+
+// const people = [
+//   {name: 'Seven of Nine', age: 19},
+//   {name: 'Nurse Chapel', age: 24},
+//   {name: 'Six of Cylons', age: undefined}
+// ];
+
+// for(let i = 0; i < people.length; i++){
+//   console.log(people[i].name + ' is a cool chick');
+// }
 
 let val;
 
-// Get array length
-val = numbers.length;
-// Check if is array
-val = Array.isArray(numbers);
-val = numbers[0];
-// Insert into array
-numbers[2] = 100;
-// Find index of value
-val = numbers.indexOf(100);
-
-// // MUTATING ARRAYS
-// numbers.push(250);
-// // ADD TO FRONT
-// numbers.unshift(120);
-// // TAKE FROM END
-// numbers.pop();
-// // TAKE FROM FRONT
-// numbers.shift();
-// // SPLICE VALUES
-// numbers.splice(1,3);
-// // REVERSE ARRAY
-// numbers.reverse();
-
-// CONCAT ARRAY
-val = numbers.concat(numbers2);
-
-// Sorting arrays
-val = fruit.sort();
-// val = numbers.sort();
-
-// Use the compare function
-// val = numbers.sort(function(x,y){
-//   return x - y;
-// })
-
-// // Reverse sort
-// val = numbers.sort(function(x,y){
-//   return y - x;
-// });
+const today = new Date();
+let birthday = new Date('6-4-1974 3:33:33');
+birthday = new Date('June 4 1974');
+birthday = new Date('6/4/74');
 
 
-// Find 
-function under50(num){
-  return num < 50;
-};
+val = today.getMonth();
+val = today.getDate();
+val = today.getDay();
+val = today.getFullYear();
+val = today.getHours();
+val = today.getTime();
 
-function over50(num){
-  return num > 50;
-};
+birthday.setMonth(2);
+birthday.setDate(12);
+birthday.setFullYear(1985);
+birthday.setHours(3);
 
-val = numbers.find(under50);
-val = numbers.find(over50);
-
-console.log(numbers);
-console.log(val);
+console.log(birthday);
