@@ -191,32 +191,98 @@ const age = 29;
 const job = 'Chief Science Officer';
 const city = 'Enterprise';
 
-// // WITHOUT TEMPLATE STRINGS (es5)
-// html = '<ul><li>Name: ' + name + '</li><li>Age: ' + age + '</li><li>Job: ' + job
-// + ' </li><li>City: ' + city + ' </li></ul>';
+// // // WITHOUT TEMPLATE STRINGS (es5)
+// // html = '<ul><li>Name: ' + name + '</li><li>Age: ' + age + '</li><li>Job: ' + job
+// // + ' </li><li>City: ' + city + ' </li></ul>';
+// // document.body.innerHTML = html;
+
+// // html = '<ul>' +
+// //        '<li>Name: ' + name + '</li>' +
+// //        '<li>Age: ' + age + '</li>' +
+// //        '<li>Job: ' + job + '</li>' +
+// //        '<li>City: ' + city + '</li>'
+// //        '</ul>'; 
+
+// function hello(){
+//   return 'hello';
+// }
+// // WITH TEMPLATE STRINGS (aka Literals)
+// html = `
+//   <ul>
+//     <li>Name: ${name}</li>
+//     <li>Age: ${age}</li>
+//     <li>Job: ${job}</li>
+//     <li>City: ${city}</li>
+//     <li>${2 + 2}</li>
+//     <li>${hello()}</li>
+//     <li>${age > 30 ? 'Over 30' : 'Under 30'}</li>
+//   </ul>
+// `;
+
 // document.body.innerHTML = html;
 
-// html = '<ul>' +
-//        '<li>Name: ' + name + '</li>' +
-//        '<li>Age: ' + age + '</li>' +
-//        '<li>Job: ' + job + '</li>' +
-//        '<li>City: ' + city + '</li>'
-//        '</ul>'; 
+// Create some arrays
+const numbers = [43,56,33,23,44,36,5];
+const numbers2 = new Array(22,45,33,76,54);
+const fruit = ['Apple', 'Starfruit', 'Snake Fruit', 'Durian'];
+const mixed = [22, 'Hello', true, undefined, null, {a:1, b:2}, new Date()];
 
-function hello(){
-  return 'hello';
-}
-// WITH TEMPLATE STRINGS (aka Literals)
-html = `
-  <ul>
-    <li>Name: ${name}</li>
-    <li>Age: ${age}</li>
-    <li>Job: ${job}</li>
-    <li>City: ${city}</li>
-    <li>${2 + 2}</li>
-    <li>${hello()}</li>
-    <li>${age > 30 ? 'Over 30' : 'Under 30'}</li>
-  </ul>
-`;
+console.log(mixed);
 
-document.body.innerHTML = html;
+let val;
+
+// Get array length
+val = numbers.length;
+// Check if is array
+val = Array.isArray(numbers);
+val = numbers[0];
+// Insert into array
+numbers[2] = 100;
+// Find index of value
+val = numbers.indexOf(100);
+
+// // MUTATING ARRAYS
+// numbers.push(250);
+// // ADD TO FRONT
+// numbers.unshift(120);
+// // TAKE FROM END
+// numbers.pop();
+// // TAKE FROM FRONT
+// numbers.shift();
+// // SPLICE VALUES
+// numbers.splice(1,3);
+// // REVERSE ARRAY
+// numbers.reverse();
+
+// CONCAT ARRAY
+val = numbers.concat(numbers2);
+
+// Sorting arrays
+val = fruit.sort();
+// val = numbers.sort();
+
+// Use the compare function
+// val = numbers.sort(function(x,y){
+//   return x - y;
+// })
+
+// // Reverse sort
+// val = numbers.sort(function(x,y){
+//   return y - x;
+// });
+
+
+// Find 
+function under50(num){
+  return num < 50;
+};
+
+function over50(num){
+  return num > 50;
+};
+
+val = numbers.find(under50);
+val = numbers.find(over50);
+
+console.log(numbers);
+console.log(val);
