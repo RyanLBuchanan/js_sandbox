@@ -156,33 +156,67 @@
 
 // Append
 
-firstName = 'Seven';
-lastName = 'Of Nine';
+// firstName = 'Seven';
+// lastName = 'Of Nine';
 
-let val;
+// let val;
 
-val = 'Seven ';
-val += 'Of Nine';
-
-
-// Escaping
-val = "T'Pol Vulcanness";
-val = 'T\'Pol Vulcanness\' cat';
-
-val = firstName.concat(' ',  lastName);
-
-val = firstName[0];
-
-val = firstName.indexOf('v');
+// val = 'Seven ';
+// val += 'Of Nine';
 
 
-const str = 'Hello my name is T\'Pol';
-val = str.split(' ');
-val = str.replace('T\'Pol', 'Seven of Nine');
+// // Escaping
+// val = "T'Pol Vulcanness";
+// val = 'T\'Pol Vulcanness\' cat';
 
-val = str.includes('foo');
+// val = firstName.concat(' ',  lastName);
 
-console.log(val);
+// val = firstName[0];
+
+// val = firstName.indexOf('v');
 
 
+// const str = 'Hello my name is T\'Pol';
+// val = str.split(' ');
+// val = str.replace('T\'Pol', 'Seven of Nine');
 
+// val = str.includes('foo');
+
+// console.log(val);
+
+
+// TEMPLATE LITERALS
+const name = 'T\'Pol';
+const age = 29;
+const job = 'Chief Science Officer';
+const city = 'Enterprise';
+
+// // WITHOUT TEMPLATE STRINGS (es5)
+// html = '<ul><li>Name: ' + name + '</li><li>Age: ' + age + '</li><li>Job: ' + job
+// + ' </li><li>City: ' + city + ' </li></ul>';
+// document.body.innerHTML = html;
+
+// html = '<ul>' +
+//        '<li>Name: ' + name + '</li>' +
+//        '<li>Age: ' + age + '</li>' +
+//        '<li>Job: ' + job + '</li>' +
+//        '<li>City: ' + city + '</li>'
+//        '</ul>'; 
+
+function hello(){
+  return 'hello';
+}
+// WITH TEMPLATE STRINGS (aka Literals)
+html = `
+  <ul>
+    <li>Name: ${name}</li>
+    <li>Age: ${age}</li>
+    <li>Job: ${job}</li>
+    <li>City: ${city}</li>
+    <li>${2 + 2}</li>
+    <li>${hello()}</li>
+    <li>${age > 30 ? 'Over 30' : 'Under 30'}</li>
+  </ul>
+`;
+
+document.body.innerHTML = html;
