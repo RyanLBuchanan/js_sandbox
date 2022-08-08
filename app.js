@@ -327,24 +327,143 @@
 //   console.log(people[i].name + ' is a cool chick');
 // }
 
-let val;
+// let val;
 
-const today = new Date();
-let birthday = new Date('6-4-1974 3:33:33');
-birthday = new Date('June 4 1974');
-birthday = new Date('6/4/74');
+// const today = new Date();
+// let birthday = new Date('6-4-1974 3:33:33');
+// birthday = new Date('June 4 1974');
+// birthday = new Date('6/4/74');
 
 
-val = today.getMonth();
-val = today.getDate();
-val = today.getDay();
-val = today.getFullYear();
-val = today.getHours();
-val = today.getTime();
+// val = today.getMonth();
+// val = today.getDate();
+// val = today.getDay();
+// val = today.getFullYear();
+// val = today.getHours();
+// val = today.getTime();
 
-birthday.setMonth(2);
-birthday.setDate(12);
-birthday.setFullYear(1985);
-birthday.setHours(3);
+// birthday.setMonth(2);
+// birthday.setDate(12);
+// birthday.setFullYear(1985);
+// birthday.setHours(3);
 
-console.log(birthday);
+// console.log(birthday);
+
+// Conditional if else statements
+const id = 100;
+
+// // EQUAL TO
+// if(id == 100){
+//   console.log('CORRECT');
+// } else {
+//   console.log('INCORRECT');
+// }
+
+// // NO EQUAL TO
+// if(id != 101){
+//   console.log('CORRECT');
+// } else {
+//   console.log('INCORRECT');
+// }
+
+// // EQUAL TO VALUE AND TYPE
+// if(id === 100){
+//   console.log('CORRECT');
+// } else {
+//   console.log('INCORRECT');
+// }
+
+// // NOT EQUAL TO VALUE AND TYPE
+// if(id !== 100){
+//   console.log('CORRECT');
+// } else {
+//   console.log('INCORRECT');
+// }
+
+// TEST IF UNDEFINED
+// if (typeof id !== 'undefined'){
+//   console.log(`The ID is ${id}`)
+// } else {
+//   console.log('NO ID');
+// }
+
+// GREATER OR LESS THAN
+// if(id > 100){
+//   console.log('CORRECT');
+// } else {
+//   console.log('INCORRECT');
+// }
+
+// IF ELSE
+const color = 'red';
+
+// if (color === 'red'){
+//   console.log('Color is red');
+// } else if (color === 'blue'){
+//   console.log('Color is blue')
+// } else {
+//   console.log('Color is not red or blue');
+// }
+
+// LOGICAL OPERATORS
+
+const name = 'T\'Pol';
+const age = 29;
+
+// if (age > 0 && age < 12){
+//   console.log(`${name} is a child`);
+// } else if (age >= 13 && age <=19){
+//   console.log(`${name} is a teenager`);
+// } else {
+//   console.log(`${name} is an adult`);
+// }
+
+// // OR || 
+// if (age < 16 || age > 65){
+//   console.log(`${name} cannot run in race`);
+// } else {
+//   console.log(`${name} is registered for the race`);
+// }
+
+// // TERNARY OPERATOR -> expression bodied method
+// console.log(id === 100 ? 'CORRECT' : 'INCORRECT');
+
+// SWITCH statements
+switch(color){
+  case 'red': 
+    console.log('Color is red');
+    break;
+  case 'blue': 
+    console.log('Color is blue');
+    break;
+  default:
+    console.log('Color is not red or blue');
+    break;
+}
+
+switch(new Date().getDay()){
+  case 0: 
+    day = 'Sunday'
+    break;
+  case 1: 
+    day = 'Monday'
+    break;
+  case 2: 
+    day = 'Tuesday'
+    break;
+  case 3: 
+    day = 'Wednesday'
+    break;
+  case 4: 
+    day = 'Thursday'
+    break;
+  case 5: 
+    day = 'Friday'
+    break;
+  case 6: 
+    day = 'Saturday'
+    break;
+}
+
+console.log(`Today is ${day}`);
+
