@@ -40,25 +40,37 @@
 // DOM Selectors for Single Elements
 // getElementById()
 
-console.log(document.getElementById('task-title'));
+// console.log(document.getElementById('task-title'));
 
-// Get things from the element
-console.log(document.getElementById('task-title').id);
-console.log(document.getElementById('task-title').className);
+// // Get things from the element
+// console.log(document.getElementById('task-title').id);
+// console.log(document.getElementById('task-title').className);
 
-const taskTitle = document.getElementById('task-title');
+// const taskTitle = document.getElementById('task-title');
 
-// Change styling
-taskTitle.style.background = '#999';
-taskTitle.style.color = '#fff';
-taskTitle.style.padding = '5px';
-// document.getElementById('task-title').style.display = 'none';
+// // Change styling
+// taskTitle.style.background = '#999';
+// taskTitle.style.color = '#fff';
+// taskTitle.style.padding = '5px';
+// // document.getElementById('task-title').style.display = 'none';
 
-// Change content
-taskTitle.textContent = 'Task List';
-taskTitle.innerText = 'My Text';
+// // Change content
+// taskTitle.textContent = 'Task List';
+// taskTitle.innerText = 'My Text';
 
-taskTitle.innerHTML = '<span style="color:goldenrod">Task List</span>';
+// taskTitle.innerHTML = '<span style="color:gold">Task List</span>';
 
 
-// document.querySelector()
+// // document.querySelector()
+// console.log(document.querySelector('#task-title'));
+// console.log(document.querySelector('.card-title'));
+// console.log(document.querySelector('h5'));
+
+// document.querySelector('li').style.color = 'blue';
+// document.querySelector('li:nth-child(3)').style.color = 'goldenrod';
+
+// document.querySelector('li:last-child').style.color = 'red';
+// document.querySelector('li:nth-child(4)').textContent = 'Элло, мир, товарищ!';
+// document.querySelector('li:nth-child(odd)').style.background = '#ccc';
+// document.querySelector('li:nth-child(even)').style.background = '#f4f4f4';
+
