@@ -429,41 +429,70 @@ const age = 29;
 // console.log(id === 100 ? 'CORRECT' : 'INCORRECT');
 
 // SWITCH statements
-switch(color){
-  case 'red': 
-    console.log('Color is red');
-    break;
-  case 'blue': 
-    console.log('Color is blue');
-    break;
-  default:
-    console.log('Color is not red or blue');
-    break;
-}
+// switch(color){
+//   case 'red': 
+//     console.log('Color is red');
+//     break;
+//   case 'blue': 
+//     console.log('Color is blue');
+//     break;
+//   default:
+//     console.log('Color is not red or blue');
+//     break;
+// }
 
-switch(new Date().getDay()){
-  case 0: 
-    day = 'Sunday'
-    break;
-  case 1: 
-    day = 'Monday'
-    break;
-  case 2: 
-    day = 'Tuesday'
-    break;
-  case 3: 
-    day = 'Wednesday'
-    break;
-  case 4: 
-    day = 'Thursday'
-    break;
-  case 5: 
-    day = 'Friday'
-    break;
-  case 6: 
-    day = 'Saturday'
-    break;
-}
+// switch(new Date().getDay()){
+//   case 0: 
+//     day = 'Sunday'
+//     break;
+//   case 1: 
+//     day = 'Monday'
+//     break;
+//   case 2: 
+//     day = 'Tuesday'
+//     break;
+//   case 3: 
+//     day = 'Wednesday'
+//     break;
+//   case 4: 
+//     day = 'Thursday'
+//     break;
+//   case 5: 
+//     day = 'Friday'
+//     break;
+//   case 6: 
+//     day = 'Saturday'
+//     break;
+// }
 
-console.log(`Today is ${day}`);
+// console.log(`Today is ${day}`);
+
+// FUNCTION DECLARATIONS
+// function greet(firstName = 'Pretty', lastName = 'Girl'){
+//   // if(typeof firstName === 'undefined'){firstName = 'Pretty'}
+//   // if(typeof lastName === 'undefined'){lastName = 'Girl'}
+//   // console.log('Zdravstvuyte!');
+//   return `Здравствуйте ${firstName} ${lastName}!`;
+// }
+
+// console.log(greet());
+
+// FUNCTION EXPRESSIONS
+// const square = function(x = 3){
+//   return x * x;
+// };
+
+// console.log(square(8));
+
+// IMMEDIATELY INVOKABLE FUNCTION EXPRESSIONS - IIFEs
+// (function(){
+//   console.log('IIFE ran . . .');
+// })();
+
+// (function(name){
+//   console.log(`Привет . . . ${name}`);
+// })('Six of Cylons');
+
+// PROPERTY METHODS -> when a function is put inside and object!!!
+
 
