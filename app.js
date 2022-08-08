@@ -494,5 +494,87 @@ const age = 29;
 // })('Six of Cylons');
 
 // PROPERTY METHODS -> when a function is put inside and object!!!
+// const todo = {
+//   add: function() {
+//     console.log('Add todo . . . ');
+//   },
+//   edit: function(id){
+//     console.log(`Edit todo ${id}`);
+//   }
+// }
+
+// todo.delete = function(){
+//   console.log('Delete todo . . . ');
+// }
+
+// todo.add();
+// todo.edit(22);
+// todo.delete();
+
+// FOR LOOP
+// for (let i = 0; i < 10; i++){
+//     if(i === 2){
+
+//     console.log(`Number ${i} is my favorite number`);
+//     continue;
+//   }
+
+//   if(i === 5){
+//     console.log('Stop the loop');
+//     break;
+//   }
+//   console.log(`Number ${i}`);
+// }
+
+// WHILE LOOP
+// let i = 100;
+
+// // while (i < 10){
+// //   console.log(`Number ${i}`);
+// //   i++;
+// // }
+
+// do {
+//   console.log(`Number ${i}`);
+//   i++;
+// }
+// while (i < 10);
+
+// LOOP THROUGH ARRAY
+ const cars = ['Dodge', 'Tesla', 'Ferrari', 'Mercedes'];
+
+//  for (let i = 0; i < cars.length; i++){
+//   console.log(i + ' ' + cars[i]);
+//  }
+
+// FOREACH
+// cars.forEach(function(car, index, array){
+//   console.log(`${index} ${car}`);
+//   console.log(array);
+// });
+
+// MAP
+// const users = [
+//   {id:1, name:'Seven of Nine'},
+//   {id:2, name:'Nurse Chapel'},
+//   {id:3, name:'T\'Pol'},
+//   {id:4, name:'Six of Cylons'}
+// ];
+
+// const ids = users.map(function(user){
+//   return user.id;
+// });
+
+// console.log(ids);
 
 
+// FOR IN LOOP
+// const user = {
+//   firstName: 'T\'Pol',
+//   lastName: 'Vulcanness',
+//   age: 29
+// }
+
+// for (let x in user){
+//   console.log(`${x} : ${user[x]}`);
+// }
