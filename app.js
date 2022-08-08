@@ -106,21 +106,111 @@
 // console.log(lis);
 
 // document.querySelectorAll
-const items = document.querySelectorAll('ul.collection li.collection-item');
+// const items = document.querySelectorAll('ul.collection li.collection-item');
 
-items.forEach(function(item, index){
-  item.textContent = `${index}: 你好世界!`;
-});
+// items.forEach(function(item, index){
+//   item.textContent = `${index}: 你好世界!`;
+// });
 
-const liOdd = document.querySelectorAll('li:nth-child(odd)');
-const liEven = document.querySelectorAll('li:nth-child(even)');
+// const liOdd = document.querySelectorAll('li:nth-child(odd)');
+// const liEven = document.querySelectorAll('li:nth-child(even)');
 
-liOdd.forEach(function(li, index){
-  li.style.background = "#f4f4f4";
-});
+// liOdd.forEach(function(li, index){
+//   li.style.background = "#f4f4f4";
+// });
 
-for(let i = 0; i < liEven.length; i++){
-  liEven[i].style.background = 'gray';
-}
+// for(let i = 0; i < liEven.length; i++){
+//   liEven[i].style.background = 'gray';
+// }
 
-console.log(items);
+// console.log(items);
+
+// // let val;
+
+// // const list = document.querySelector('ul.collection');
+// // const listItem = document.querySelector('li.collection-item:first-child');
+
+// // val = listItem;
+// // val = list;
+
+// // // Get child nodes
+// // val = list.childNodes;
+// // val = list.childNodes[0].nodeName;
+// // val = list.childNodes[1].nodeType;
+
+// // // TYPE OF NODES
+// // // 1 - Element
+// // // 2 - Attribute (deprecated)
+// // // 3 - Text node
+// // // 8 - Comment
+// // // 9 - Document itself
+// // // 10 - Doctype
+
+// // // Get children elements nodes
+// // val = list.children;
+// // val = list.children[0];
+// // list.children[1].textContent = "Guten tag!";
+
+// // // Children of children
+// // list.children[3].children[0].id = "test-link";
+// // val = list.children[3].children[0];
+
+// // // First child
+// // val = list.firstChild;
+// // val = list.firstElementChild;
+
+// // // Last child
+// // val = list.lastChild;
+// // val = list.lastElementChild;
+
+// // // Count child elements
+// // val = list.childElementCount;
+
+// // // Get parent node
+// // val = listItem.parentNode;
+// // val = listItem.parentElement;
+// // val = listItem.parentElement.parentElement;
+
+// // // Get next sibling
+// val = listItem.nextSibling;
+// val = listItem.nextElementSibling;
+// val = listItem.nextElementSibling.nextElementSibling;
+
+// // Get previous sibling
+// // val = listItem.previousSibling;
+// // val = listItem.previousElementSibling;
+
+
+// console.log(val);
+
+// Create element
+const li = document.createElement('li');
+
+// Add class
+li.className = 'collection-item';
+
+// Add id
+li.id = 'bon-jour-item'
+
+// Add attribute
+li.setAttribute('title', 'Bon jour Item');
+
+// Create text node and append
+li.appendChild(document.createTextNode('Bon jour le Monde!'));
+
+// Create new link element
+const link = document.createElement('a');
+
+// Add classes
+link.className = "delete-item secondary-content";
+
+// Add icon html
+link.innerHTML = '<i class = "fa fa-remove"></i>';
+
+// Append link into li
+li.appendChild(link);
+
+// Append li as child to ul
+document.querySelector('ul.collection').appendChild(li);
+
+console.log(li);
