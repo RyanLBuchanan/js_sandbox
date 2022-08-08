@@ -578,3 +578,54 @@ const age = 29;
 // for (let x in user){
 //   console.log(`${x} : ${user[x]}`);
 // }
+
+// ALERT
+// window.alert('Привет,  Мир');
+
+// PROMPT 
+// const input = prompt();
+// alert(input);
+
+//CONFIRM
+// if(confirm('Are you sure?')){
+//   console.log('Yes');
+// } else{
+//   console.log('No');
+// }
+
+// let val;
+
+// // Outer height and width
+// val = window.outerHeight;
+// val = window.outerWidth;
+
+// // Scroll points 
+// val = window.scrollY;
+// val = window.scrollX;
+
+// // Location objects 
+// val = window.location;
+// val = window.location.hostname;
+// val = window.location.port;
+// val = window.location.href;
+// val = window.location.search;
+
+// // Redirect
+// // window.location.href = 'http://google.com';
+// // window.location.reload();
+
+// // HISTORY object
+// // window.history.go(-2);
+// // window.history.length;
+
+// // Navigator object
+// val = window.navigator;
+// val = window.navigator.appName;
+// val = window.navigator.appVersion;
+// val = window.navigator.userAgent;
+// val = window.navigator.platform;
+// val = window.navigator.vendor;
+// val = window.navigator.language;
+
+// console.log(val);
+
