@@ -184,33 +184,207 @@
 // console.log(val);
 
 // Create element
-const li = document.createElement('li');
+// const li = document.createElement('li');
 
-// Add class
-li.className = 'collection-item';
+// // Add class
+// li.className = 'collection-item';
 
-// Add id
-li.id = 'bon-jour-item'
+// // Add id
+// li.id = 'bon-jour-item'
 
-// Add attribute
-li.setAttribute('title', 'Bon jour Item');
+// // Add attribute
+// li.setAttribute('title', 'Bon jour Item');
 
-// Create text node and append
-li.appendChild(document.createTextNode('Bon jour le Monde!'));
+// // Create text node and append
+// li.appendChild(document.createTextNode('Bon jour le Monde!'));
 
-// Create new link element
-const link = document.createElement('a');
+// // Create new link element
+// const link = document.createElement('a');
 
-// Add classes
-link.className = "delete-item secondary-content";
+// // Add classes
+// link.className = "delete-item secondary-content";
 
-// Add icon html
-link.innerHTML = '<i class = "fa fa-remove"></i>';
+// // Add icon html
+// link.innerHTML = '<i class = "fa fa-remove"></i>';
 
-// Append link into li
-li.appendChild(link);
+// // Append link into li
+// li.appendChild(link);
 
-// Append li as child to ul
-document.querySelector('ul.collection').appendChild(li);
+// // Append li as child to ul
+// document.querySelector('ul.collection').appendChild(li);
 
-console.log(li);
+// console.log(li);
+
+// REPLACE ELEMENTS
+// Create an element
+// const newHeading = document.createElement('h2');
+
+// // Add id
+// newHeading.id = 'task-title';
+
+// // New text node
+// newHeading.appendChild(document.createTextNode('T\'Pol\'s List'));
+
+// // Get the old heading 
+// const oldHeading = document.getElementById('task-title');
+
+// // Parent
+// const cardAction = document.querySelector('.card-action');
+
+// // Replace
+// cardAction.replaceChild(newHeading, oldHeading)
+
+// // console.log(newHeading);
+
+// // Remove element 
+// const lis = document.querySelectorAll('li');
+
+// const list = document.querySelector('ul');
+
+// // Remove list item
+// lis[0].remove();
+
+// // Remove child element
+// list.removeChild(lis[3]);
+
+// // CLASSES & ATTRIBUTES
+// const firstLi = document.querySelector('li:first-child');
+// const link = firstLi.children[0];
+
+// let val;
+
+// // CLASSSES
+// val = link.className;
+// val = link.classList;
+// val = link.classList[0];
+// link.classList.add('TEST');
+// link.classList.remove('TEST');
+// val = link;
+
+// // ATTRIBUTES
+// val = link.getAttribute('href');
+// val = link.setAttribute('href', 'http://google.com');
+// link.setAttribute('title', 'Google');
+// val = link.hasAttribute('title');
+// val = link.getAttribute('title');
+
+// val = link;
+
+// console.log(val);
+
+// document.querySelector('.clear-tasks').addEventListener('click', 
+// function(e){
+//   console.log('Привет, мир!')
+
+//   // e.preventDefault();
+// });
+
+// document.querySelector('.clear-tasks').addEventListener('click', onClick);
+
+// function onClick(e){
+//   console.log('Щелкнул!');
+
+//   let val;
+
+//   val = e;
+
+//   // Event target element
+//   val = e.target;
+//   val = e.target.id;
+//   val = e.target.className;
+//   val = e.target.classList;
+
+//   e.target.innerText = "Здравствуйте!";
+
+//   // Event type
+//   val = e.type;
+
+//   // Timestamp
+//   val = e.timeStamp;
+
+//   // Coordinates of event relative to the window
+//   val = e.clientY;
+//   val = e.clientX;
+
+//   // Coordinates of event relative to the element
+//   val = e.offsetY;
+//   val = e.offsetX;
+
+
+//   console.log(val);
+//   // e.preventDefault();
+// }
+
+// const clearBtn = document.querySelector('.clear-tasks');
+// const card = document.querySelector('.card');
+// const heading = document.querySelector('h5');
+
+// // CLICK
+// // card.addEventListener('click', runEvent);
+
+// // // DOUBLE CLICK
+// // card.addEventListener('dblclick', runEvent);
+
+// // MOUSEDOWN
+// // card.addEventListener('mousedown', runEvent);
+// // card.addEventListener('mouseup', runEvent);
+
+// // MOUSE ENTER
+// // card.addEventListener('mouseenter', runEvent);
+// // card.addEventListener('mouseleave', runEvent);
+
+// // // MOUSE OVER and OUT
+// // card.addEventListener('mouseover', runEvent);
+// // card.addEventListener('mouseout', runEvent);
+
+// // MOUSE MOVE
+// card.addEventListener('mousemove', runEvent);
+
+// // Event handler
+// function runEvent(e) {
+//   console.log(`EVENT TYPE: ${e.type}`);
+
+//   heading.textContent = `MouseX: ${e.offsetX} MouseY: ${e.offsetY}`;
+
+//   document.body.style.backgroundColor = `rgb(${e.offsetX}, ${e.offsetY}, 40)`;
+// }
+
+// const form = document.querySelector('form');
+// const taskInput = document.getElementById('task');
+// const heading = document.querySelector('h5');
+// const select = document.querySelector('select');
+
+// // Clear input
+// taskInput.value = '';
+
+// // form.addEventListener('submit', runEvent);
+
+// // KEYDOWN
+// // taskInput.addEventListener('keydown', runEvent);
+// // KEYUP
+// // taskInput.addEventListener('keyup', runEvent);
+// // KEYPRESS
+// // taskInput.addEventListener('keypress', runEvent);
+// // FOCUS
+// // taskInput.addEventListener('focus', runEvent);
+// // // BLUR
+// // taskInput.addEventListener('blur', runEvent);
+// // // Cut
+// // taskInput.addEventListener('cut', runEvent);
+// // Input
+// // taskInput.addEventListener('input', runEvent);
+// // CHANGE
+// select.addEventListener('change', runEvent);
+
+// function runEvent(e){
+//   console.log(`EVENT TYPE ${e.type}`);
+
+//   console.log(e.target.value);
+
+  // heading.innerText = e.target.value;
+
+  // // Get input value
+  // console.log(taskInput.value);
+
+  // e.preventDefault();
+}
