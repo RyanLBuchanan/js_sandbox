@@ -411,11 +411,23 @@
 // }); 
 
 
+/** <--------------------------------- DELETE LIST ITEM -------------------------------------------> */
+
 // EVENT DELEGATION event on parent and going down opposite of bubbling
-const delItem = document.querySelector('.delete-item');
+// const delItem = document.querySelector('.delete-item');
 
-delItem.addEventListener('click', deleteItem);
+// delItem.addEventListener('click', deleteItem);
 
-function deleteItem(){
-  console.log('delete item');
-}
+document.body.addEventListener('click', deleteItem);
+
+function deleteItem(e){
+  // console.log(e.target);
+  // if(e.target.parentElement.className === 'delete-item secondary-content'){
+  //   console.log('delete item');
+  // }
+  
+  if(e.target.parentElement.classList.contains('delete-item')){
+    console.log('delete item');
+    e.target.parentElement.parentElement.remove();
+    }
+  }
