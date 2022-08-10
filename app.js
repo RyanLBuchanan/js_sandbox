@@ -411,28 +411,28 @@
 // }); 
 
 
-/** <--------------------------------- DELETE LIST ITEM -------------------------------------------> */
+/** <--------------- DELETE LIST ITEM -------------------------------------------> */
 
 // EVENT DELEGATION event on parent and going down opposite of bubbling
-// const delItem = document.querySelector('.delete-item');
+const delItem = document.querySelector('.delete-item');
 
-// delItem.addEventListener('click', deleteItem);
+delItem.addEventListener('click', deleteItem);
 
-// document.body.addEventListener('click', deleteItem);
+document.body.addEventListener('click', deleteItem);
 
-// function deleteItem(e){
-//   // console.log(e.target);
-//   // if(e.target.parentElement.className === 'delete-item secondary-content'){
-//   //   console.log('delete item');
-//   // }
+function deleteItem(e){
+  // console.log(e.target);
+  // if(e.target.parentElement.className === 'delete-item secondary-content'){
+  //   console.log('delete item');
+  // }
   
-//   if(e.target.parentElement.classList.contains('delete-item')){
-//     console.log('delete item');
-//     e.target.parentElement.parentElement.remove();
-//     }
-//   }
+  if(e.target.parentElement.classList.contains('delete-item')){
+    console.log('delete item');
+    e.target.parentElement.parentElement.remove();
+    }
+  }
 
-  /** <--------------------------------- DELETE LIST ITEM -------------------------------------------> */
+  /** <--------------- DELETE LIST ITEM -------------------------------------------> */
 
   // SET LOCAL STORAGE ITEM
   // localStorage.setItem('name', 'T\'Pol');
@@ -453,31 +453,31 @@
 
 //   console.log(`Well . . . hi there! My name is ${name} and, er . . . um, I am ${age}.`);
 
-document.querySelector('form').addEventListener('submit', 
-function(e){
-  const task = document.getElementById('task').value;
+// document.querySelector('form').addEventListener('submit', 
+// function(e){
+//   const task = document.getElementById('task').value;
 
-  let tasks;
+//   let tasks;
 
-  if(localStorage.getItem('tasks') === null){
-    tasks = [];
-  } else {
-    tasks = JSON.parse(localStorage.getItem('tasks'));
-  }
+//   if(localStorage.getItem('tasks') === null){
+//     tasks = [];
+//   } else {
+//     tasks = JSON.parse(localStorage.getItem('tasks'));
+//   }
 
-  tasks.push(task);
+//   tasks.push(task);
 
-  localStorage.setItem('tasks', JSON.stringify(tasks));
+//   localStorage.setItem('tasks', JSON.stringify(tasks));
 
-  alert('Task saved');
+//   alert('Task saved');
 
-  console.log(tasks);
+//   console.log(tasks);
 
-  e.preventDefault();
-});
+//   e.preventDefault();
+// });
 
-const tasks = JSON.parse(localStorage.getItem('tasks'));
+// const tasks = JSON.parse(localStorage.getItem('tasks'));
 
-tasks.forEach(function(tasks){
-  console.log(tasks);
-});
+// tasks.forEach(function(tasks){
+//   console.log(tasks);
+// });
