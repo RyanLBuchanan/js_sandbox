@@ -418,16 +418,66 @@
 
 // delItem.addEventListener('click', deleteItem);
 
-document.body.addEventListener('click', deleteItem);
+// document.body.addEventListener('click', deleteItem);
 
-function deleteItem(e){
-  // console.log(e.target);
-  // if(e.target.parentElement.className === 'delete-item secondary-content'){
-  //   console.log('delete item');
-  // }
+// function deleteItem(e){
+//   // console.log(e.target);
+//   // if(e.target.parentElement.className === 'delete-item secondary-content'){
+//   //   console.log('delete item');
+//   // }
   
-  if(e.target.parentElement.classList.contains('delete-item')){
-    console.log('delete item');
-    e.target.parentElement.parentElement.remove();
-    }
+//   if(e.target.parentElement.classList.contains('delete-item')){
+//     console.log('delete item');
+//     e.target.parentElement.parentElement.remove();
+//     }
+//   }
+
+  /** <--------------------------------- DELETE LIST ITEM -------------------------------------------> */
+
+  // SET LOCAL STORAGE ITEM
+  // localStorage.setItem('name', 'T\'Pol');
+  // localStorage.setItem('age', '29');
+
+  // SET SESSION STORAGE ITEM
+  // sessionStorage.setItem('name', 'Six of Cylons');
+
+  // REMOVE FROM LOCAL STORAGE
+  // localStorage.removeItem('name');
+
+  // GET FROM STORAGE
+//   const name = localStorage.getItem('name');
+//   const age = localStorage.getItem('age');
+
+// // CLEAR LOCAL STORAGE
+// localStorage.clear();
+
+//   console.log(`Well . . . hi there! My name is ${name} and, er . . . um, I am ${age}.`);
+
+document.querySelector('form').addEventListener('submit', 
+function(e){
+  const task = document.getElementById('task').value;
+
+  let tasks;
+
+  if(localStorage.getItem('tasks') === null){
+    tasks = [];
+  } else {
+    tasks = JSON.parse(localStorage.getItem('tasks'));
   }
+
+  tasks.push(task);
+
+  localStorage.setItem('tasks', JSON.stringify(tasks));
+
+  alert('Task saved');
+
+  console.log(tasks);
+
+  e.preventDefault();
+});
+
+const tasks = JSON.parse(localStorage.getItem('tasks'));
+
+tasks.forEach(function(tasks){
+  console.log(tasks);
+});
